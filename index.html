@@ -6,22 +6,34 @@
 -->
 <html>
 	<head>
-		<title>Astral by HTML5 UP</title>
+		<title>Raylan Cordeiro</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/typingAnimationStyle.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
 	</head>
+	
 	<body class="is-preload">
 
 		<!-- Wrapper-->
 			<div id="wrapper">
 
 				<!-- Nav -->
-					<nav id="nav">
+					<nav id="nav" class="menu-custom">
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
 						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
 						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+						<a href="www.linkedin.com/in/raylancordeiro" target="_blank" class="icon brands fa-linkedin"><span>Linkedin</span></a>
+						<a href="https://github.com/raylancordeiro" target="_blank" class="icon brands fa-github"><span>Github</span></a>
+						<a href="https://www.instagram.com/raylancordeiro/" target="_blank" class="icon brands fa-instagram"><span>Instagram</span></a>
+						<a
+						href="https://api.whatsapp.com/send?phone=5585987317117&text=Ol%C3%A1%20Raylan,%20vi%20seu%20portf%C3%B3lio.%20Estou%20entrando%20em%20contato%20com%20voc%C3%AA%20para%20..."
+						class="icon brands fa-whatsapp"
+						target="_blank"
+						><span>Whatsapp</span></a>
+						<a href="#pix" class="fa-solid fa-qrcode"><span>Pix</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -31,11 +43,11 @@
 							<article id="home" class="panel intro">
 								<header>
 									<h1>Raylan Cordeiro</h1>
-									<p>Senior Astral Projectionist</p>
+									<p id="typingText" class="typing"></p>
 								</header>
 								<a href="#work" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.jpg" alt="" />
+									<img src="images/me.jpeg" alt="" />
 								</a>
 							</article>
 
@@ -45,9 +57,7 @@
 									<h2>Work</h2>
 								</header>
 								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
+									Algumas fotos de palestras e eventos que participei.
 								</p>
 								<section>
 									<div class="row">
@@ -75,18 +85,6 @@
 										<div class="col-4 col-6-medium col-12-small">
 											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
-										</div>
 									</div>
 								</section>
 							</article>
@@ -96,27 +94,27 @@
 								<header>
 									<h2>Contact Me</h2>
 								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
+								<section class="body-prompt-contato">
+										<div class="prompt-contato">
+										  <pre class="prompt-text-contato">
+											<span class="prompt-label-contato">$ ~</span> cat contato.log
+											----------------------------------------
+											<span class="prompt-label-green-contato">Email:</span> raylancordeiro@hotmail.com
+											<span class="prompt-label-green-contato">Celular:</span> (85) 9 8731-7117
+											----------------------------------------
+											<span class="prompt-label-contato">$ ~</span> _
+										  </pre>
 										</div>
-									</div>
-								</form>
+								</section>
+							</article>
+
+						<!-- PIX -->
+							<article id="pix" class="panel">
+								<header>
+									<h2>PIX</h2>
+								</header>
+								<div id="qrcode"></div>
+								<div class="qr-code-message">* Escanei como um qr code comum, NÃO use o app do banco.</div>
 							</article>
 
 					</div>
@@ -136,5 +134,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/typingAnimation.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
 	</body>
 </html>
