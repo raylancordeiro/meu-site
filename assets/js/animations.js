@@ -4,6 +4,7 @@ window.addEventListener('load', () => {
     generateQrCode();
 });
 
+const pathProd = '/meu-site'
 
 function loadOccupation() {
     const texts = ["Programador", "Back-End Engineer", "Solutions Architect", "Freelancer", "Professor"];
@@ -49,7 +50,7 @@ function loadFavicon() {
 
     function changeFavicon() {
         const link = document.querySelector("link[rel='shortcut icon']");
-        link.setAttribute('href', '/images/' + icons[iconIndex]);
+        link.setAttribute('href', 'images/' + icons[iconIndex]);
 
         iconIndex = (iconIndex + 1) % icons.length;
 
