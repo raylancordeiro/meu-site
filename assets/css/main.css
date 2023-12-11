@@ -1771,7 +1771,6 @@ input, select, textarea {
 
 	#nav {
 		text-align: center;
-		height: 4.25em;
 		cursor: default;
 	}
 
@@ -1798,22 +1797,6 @@ input, select, textarea {
 
 			#nav a:before {
 				font-size: 0.8em;
-			}
-
-			#nav a:after {
-				content: '';
-				display: block;
-				position: absolute;
-				left: 50%;
-				bottom: -0.75em;
-				margin-left: -0.5em;
-				border-bottom: solid 0em #ffffff;
-				border-left: solid 0.5em transparent;
-				border-right: solid 0.5em transparent;
-				-moz-transition: border-bottom-width .25s ease-in-out;
-				-webkit-transition: border-bottom-width .25s ease-in-out;
-				-ms-transition: border-bottom-width .25s ease-in-out;
-				transition: border-bottom-width .25s ease-in-out;
 			}
 
 			#nav a span {

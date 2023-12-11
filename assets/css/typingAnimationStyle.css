@@ -12,7 +12,7 @@
   .menu-custom {
     background-color: hsla(0, 0%, 0%, 0.5); /* Cor de fundo com transparência */
     border-radius: 120px; /* Bordas arredondadas */
-    padding: 16px;
+    padding: 10px;
     box-shadow: 0 4px 8px rgb(0, 0, 0); /* Sombra: deslocamento x, deslocamento y, desfoque, cor */
     margin-bottom: 10px;
   }
